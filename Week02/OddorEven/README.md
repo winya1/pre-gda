@@ -1,8 +1,8 @@
-Odd or Even?
+Odd or Even? <br>
 Given an integer number, output Odd if it is odd, or Even if it is even.
 
-Input
+Input <br>
 The input contains exatly one number N.
 
-Output
+Output <br>
 Output one a single line containing Odd or Even.
