@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 class Solution {
-    // Note the `static` keyword before the class definition: it is required.
     static class twoDPoint {
         private double x;
         private double y;
@@ -60,11 +59,6 @@ class Solution {
         private twoDPoint firstPoint;
         private twoDPoint secondPoint;
         private twoDPoint thirdPoint;
-        private twoDPoint fourthPoint;
-        private Segment distanceFirstAndSecond;
-        private Segment distanceSecondAndThird;
-        private Segment distanceFirstAndThird;
-        private Segment distanceFirstAndFourth;
 
         public Rectangle(twoDPoint firstPoint, twoDPoint secondPoint, twoDPoint thirdPoint) {
             this.firstPoint = firstPoint;
