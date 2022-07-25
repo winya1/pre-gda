@@ -16,18 +16,3 @@ Each test case is a single integer number N: the number to call the F function.
 
 <h2> Output </h2>
 For each test case, output one line containing Case #x: y, where x is the test case number (starting at 1), and y is the corresponding Fibonacci number.
-
-Sample
-Sample Input
-save_alt
-content_copy
-3
-0
-5
-10
-Sample Output
-save_alt
-content_copy
-Case #1: 0
-Case #2: 5
-Case #3: 55
