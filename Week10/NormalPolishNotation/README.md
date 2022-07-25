@@ -5,13 +5,7 @@ An NPN expression is either:
 
 A number. The expression result is equal to the number.
 An operation ("+", "-", "*", "/", or "^"), followed by two other expressions. The result is equal to the result of applying the operation to the results of the first and the second expressions.
-<h2> Examples: </h2>
 
-2                    Number 2, yielding 2
-+ 2 3                add "2" and "3", yielding 5
-* + 2 3 4            multiply: "+ 2 3" (which is 5) and "4", yielding 20
-- 2 1                subtract "2" and "1", yielding 1
-- 1 2                subtract "1" and "2", yielding -1
 NPN expressions can be evaluated using recursive function private static double npn(Scanner in), which does the following:
 
 Read the next input token. If it is a number, return its value.
