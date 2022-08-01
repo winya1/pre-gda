@@ -7,10 +7,10 @@ class Solution {
         if (noOfRotations == 0) {
             return arr;
         }
-        if (noOfRotations > arr.length && arr.length % noOfRotations == 0 && noOfRotations != 1) {
+        else if (noOfRotations > arr.length && arr.length % noOfRotations == 0 && noOfRotations != 1) {
             return arr;
         }
-        if (noOfRotations == arr.length) {
+        else if (noOfRotations == arr.length) {
             return arr;
         } else {
             if (noOfRotations > arr.length) {
