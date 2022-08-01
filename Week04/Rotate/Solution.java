@@ -23,7 +23,7 @@ class Solution {
             int [] result = new int[arr.length];
             System.arraycopy(rightRotation, 0, result, 0, noOfRotations);
             System.arraycopy(array,0, result, rightRotation.length, array.length);
-        return result;
+            return result;
         }
 
     }
