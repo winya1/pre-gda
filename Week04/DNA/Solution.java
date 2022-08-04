@@ -123,7 +123,7 @@ class KMP_String_Matching {
 
 }
 
-class DNA {
+class Solution {
 
 
     public static void main(String[] args) {
