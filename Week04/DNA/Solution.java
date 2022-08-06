@@ -124,8 +124,6 @@ class KMP_String_Matching {
 }
 
 class Solution {
-
-
     public static void main(String[] args) {
         HashMap<String, List<Integer>> map = new LinkedHashMap<>(); //map to collect person's name and list of STRs counts
         List<String> names = new ArrayList<>(); // list of all names
@@ -224,4 +222,3 @@ class Solution {
         }
     }
 }
-
