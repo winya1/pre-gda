@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Solution {
 
-
   // Add constants for particle types here.
   public static final int EMPTY = 0;
   public static final int METAL = 1;
-  public static final int SAND  = 2;
+  public static final int SAND = 2;
+
   public static final int WATER = 3;
 
   public static final String[] NAMES = {"Empty", "Metal", "Sand", "Water"};
@@ -27,7 +27,10 @@ public class Solution {
   public Solution(SandDisplayInterface display, RandomGenerator random) {
     this.display = display;
     this.random = random;
-    this.grid = new int[display.getNumRows()][display.getNumColumns()];
+    int rows = display.getNumRows();
+    int cols = display.getNumColumns();
+    grid = new int[rows][cols];
+
   }
 
   /**
@@ -38,24 +41,34 @@ public class Solution {
    * @param tool
    */
   private void locationClicked(int row, int col, int tool) {
-    grid[row][col] = tool;
+    // stores the specified tool value in the corresponding location in the grid.
+
+      grid[row][col] = tool;
+
   }
 
   /** Copies each element of grid into the display. */
   public void updateDisplay() {
-    for (int i = 0; i < display.getNumColumns(); i++) {
-      for (int j = 0; j < display.getNumRows(); j++) {
-        if (grid[i][j] == EMPTY) {
-          display.setColor(i, j, Color.BLACK);
-        } else if (grid[i][j] == METAL) {
-          display.setColor(i, j, Color.gray);
-        } else if (grid[i][j] == SAND) {
-          display.setColor(i, j, Color.yellow);
-        } else if (grid[i][j] == WATER) {
-          display.setColor(i, j, Color.blue);
+    // sets the right color for every square in the grid
+
+      for (int y = 0; y < display.getNumColumns(); y++) {
+          for (int x = 0; x < display.getNumRows(); x++) {
+                int value = grid[x][y];
+                Color color;
+                if (value == EMPTY) {
+                    color = new Color(0, 0, 0);
+                } else if (value == METAL) {
+                    color = new Color(220,220,220);
+              } else if (value == SAND) {
+                    color = new Color(255,255,0);
+                } else if (value == WATER) {
+                  color = new Color(65,105,225);
+                } else {
+                    color = new Color(0, 0, 0);
+                }
+                display.setColor(x, y, color);
+          }
       }
-      }
-    }
   }
 
   /** Called repeatedly. Causes one random particle to maybe do something. */
@@ -108,9 +121,7 @@ public class Solution {
         }
       }
     }
- 
   }
-
 
   /********************************************************************/
   /********************************************************************/
