@@ -1,0 +1,9 @@
+Case #1:
+Current value: 2
+[3, 3, 1]
+[2, 3, 1]
+Current value: 1
+[2, 3, 3]
+[2, 2, 3]
+[1, 2, 3]
+Sorted: [1, 2, 3]
