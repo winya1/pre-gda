@@ -4,6 +4,8 @@ import java.util.Scanner;
 class Solution {
 
     public static int[] rotateArrayRight(int[] arr, int noOfRotations) {
+        
+        // first few set of conditions for edge cases 
         if (noOfRotations == 0) {
             return arr;
         }
@@ -16,6 +18,8 @@ class Solution {
             if (noOfRotations > arr.length) {
                 noOfRotations = noOfRotations % arr.length;
             }
+            
+            //Using arraycopy to split the array and copy over the right rotation to avoid runtime error
             int[] rightRotation = new int[noOfRotations];
             int[] array = new int[arr.length - noOfRotations];
             System.arraycopy(arr, 0, array, 0, array.length);
