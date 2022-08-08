@@ -47,9 +47,9 @@ class Solution {
             return Math.abs(0.5*((firstPoint.x)*(secondPoint.y - thirdPoint.y) + (secondPoint.x)*(thirdPoint.y - firstPoint.y)
                     + thirdPoint.x*(firstPoint.y - secondPoint.y)));
         }
-        
+
         public double perimeter() {
-             return distanceFirstAndSecond.length() + distanceSecondAndThird.length() + distanceFirstAndThird.length();
+            return distanceFirstAndSecond.length() + distanceSecondAndThird.length() + distanceFirstAndThird.length();
 
         }
 
@@ -67,8 +67,8 @@ class Solution {
         }
 
         public double xSide() {
-           return Math.max(firstPoint.x, Math.max(secondPoint.x, thirdPoint.x)) -
-                   Math.min(firstPoint.x, Math.min(secondPoint.x, thirdPoint.x));
+            return Math.max(firstPoint.x, Math.max(secondPoint.x, thirdPoint.x)) -
+                    Math.min(firstPoint.x, Math.min(secondPoint.x, thirdPoint.x));
 
         }
 
@@ -78,10 +78,37 @@ class Solution {
 
         }
 
+        public twoDPoint bottomLeft() {
+            double x = Math.min(firstPoint.x, Math.min(secondPoint.x, thirdPoint.x));
+            double y = Math.min(firstPoint.y, Math.min(secondPoint.y, thirdPoint.y));
+            twoDPoint bottomLeft = new twoDPoint(x, y);
+            return bottomLeft;
+        }
+
+        public twoDPoint topLeft() {
+            double x = Math.min(firstPoint.x, Math.min(secondPoint.x, thirdPoint.x));
+            double y = Math.max(firstPoint.y, Math.max(secondPoint.y, thirdPoint.y));
+            twoDPoint topLeft = new twoDPoint(x, y);
+            return topLeft;
+        }
+
+        public twoDPoint topRight() {
+            double x = Math.max(firstPoint.x, Math.max(secondPoint.x, thirdPoint.x));
+            double y = Math.max(firstPoint.y, Math.max(secondPoint.y, thirdPoint.y));
+            twoDPoint topRight = new twoDPoint(x, y);
+            return topRight;
+        }
+
+        public twoDPoint bottomRight() {
+            double x = Math.max(firstPoint.x, Math.max(secondPoint.x, thirdPoint.x));
+            double y = Math.min(firstPoint.y, Math.min(secondPoint.y, thirdPoint.y));
+            twoDPoint bottomRight = new twoDPoint(x, y);
+            return bottomRight;
+        }
+
         public double area() {
             return xSide()*ySide();
         }
-
 
         public double perimeter() {
             return 2*xSide() + 2*ySide();
@@ -92,7 +119,7 @@ class Solution {
 
 
     public static void main(String[] args) {
-        
+
         Scanner in = new Scanner(System.in);
 
         int caseInput = Integer.parseInt(in.nextLine());
@@ -108,7 +135,7 @@ class Solution {
             Rectangle rectangle = new Rectangle(first, second, third);
 
             System.out.printf("Case #" + (i+1) + ": " + String.format("%.2f", triangle.area()) + " " + String.format("%.2f", triangle.perimeter())
-            + " " + String.format("%.2f", rectangle.area()) + " " + String.format("%.2f", rectangle.perimeter()) + "\n");
+                    + " " + String.format("%.2f", rectangle.area()) + " " + String.format("%.2f", rectangle.perimeter()) + "\n");
         }
     }
 }
