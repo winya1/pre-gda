@@ -1,10 +1,12 @@
+https://coding-competitions-staging.appspot.com/codejam/round/0000000000a5c424/0000000000a5c426 <br>
 <h2> Normal Polish Notation </h2>
 "Normal Polish Notation", "Polish Notation", "NPN", "PN", or "prefix" form, is a mathematical expression where operators ("+" addition, "-" subtraction, "*" multiplication, "/" division, and "^" exponentiation) come before (prefix) the operands they work on.
 
 An NPN expression is either:
 
-A number. The expression result is equal to the number.
-An operation ("+", "-", "*", "/", or "^"), followed by two other expressions. The result is equal to the result of applying the operation to the results of the first and the second expressions.
+<br> A number. The expression result is equal to the number.
+<br> An operation ("+", "-", "*", "/", or "^"), followed by two other expressions. The result is equal to the result of applying the operation to the results of the first and the second expressions.
+
 
 NPN expressions can be evaluated using recursive function private static double npn(Scanner in), which does the following:
 
