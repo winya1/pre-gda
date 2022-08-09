@@ -1,3 +1,4 @@
+https://coding-competitions-staging.appspot.com/codejam/round/0000000000a5a33f/0000000000a5a341 <br>
 <h2> Reverse Polish Notation (week 7, assignment 3) </h2>
 Instructions:
 
@@ -9,10 +10,10 @@ Each line consists of a mathematical expression in Reverse Polish Notation. Inpu
 
 Examples:
 
-2 3 +               add 2 and 3, yielding 5
-2 3 + 4 *           add 2 and 3, yielding 5, then multiply it by 4, yielding 20
-2 1 -               subtract 1 from 2 (2 - 1) yielding 1
-1 2 -               subtract 2 from 1, yielding -1
+>2 3 +               add 2 and 3, yielding 5 <br>
+>2 3 + 4 *           add 2 and 3, yielding 5, then multiply it by 4, yielding 20 <br>
+>2 1 -               subtract 1 from 2 (2 - 1) yielding 1 <br>
+>1 2 -               subtract 2 from 1, yielding -1 <br>
 See: https://medium.com/@ainayat865/reverse-polish-notation-rpn-with-stack-4551a5f54ae0
 For each line read, evaluate the expression, and print out its numeric value as a Double.
 
@@ -49,6 +50,6 @@ It's helpful to be able to read one line at a time, and then to read each token 
 
 To do that, you can create one Scanner that reads System.in by line, and for each of those lines, create a second Scanner that reads just that line, by using the Scanner constructor that takes a String:
 
-public static double rpn(String line) {
-// make a Stack here
-try (Scanner lin = new Scanner(line)) { ....
+> public static double rpn(String line) { <br>
+> // make a Stack here <br>
+> try (Scanner lin = new Scanner(line)) { .... <br>
