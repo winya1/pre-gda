@@ -40,7 +40,7 @@ class Solution {
 
     }
 
-  // created a separate class for mirrored BST, but there might be a way to combine the two methods
+  // created a separate class for mirrored BST, but there might be a way to combine the two 
     static class MirroredBinarySearchTree {
         Node root;
 
