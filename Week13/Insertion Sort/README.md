@@ -1,3 +1,4 @@
+https://coding-competitions-staging.appspot.com/codejam/round/0000000000a5e50d/0000000000a5e60f <br>
 <h2> Insertion Sort </h2>
 Insertion sort is one of the common "inefficient" sorts - sorts that are O(n^2) in the worst case. However, insertion sort is helpful to know because it is actually quite efficent for nearly-sorted data. For example, if you have a list of alphabetized student names and you want to add a new student, insertion sort is a great option.
 
