@@ -1,3 +1,5 @@
+https://coding-competitions-staging.appspot.com/codejam/round/0000000000a5da26/0000000000a5d9c2 <br>
+
 <h2> Lowest Common Ancestor </h2>
 For this activity, you will work with a Binary Search Tree. Your task will be to populate the BST with the integers that are provided as input and then to output the value in the node that is the Lowest Common Ancestor of the first two nodes read in.
 
