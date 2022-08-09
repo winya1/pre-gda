@@ -11,7 +11,7 @@ An NPN expression is either:
 NPN expressions can be evaluated using recursive function private static double npn(Scanner in), which does the following:
 
 Read the next input token. If it is a number, return its value.
-Otherwise, the token is an operation. Call npn(in) twice to evaluate the first and the second expression, then apply the operation to their results.
+<br> Otherwise, the token is an operation. Call npn(in) twice to evaluate the first and the second expression, then apply the operation to their results.
 Tip
 Normal Polish Notation input format is very similar to the input format of Reverse Polish Notation, that was in assignment 3 of week 7. You can reuse the old code handling the input, and write new code to compute the result.
 
