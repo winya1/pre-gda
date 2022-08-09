@@ -1,3 +1,5 @@
+https://coding-competitions-staging.appspot.com/codejam/round/0000000000a56555/0000000000a57741
+<br>
 <h2> Points </h2>
 Define a class for a 2D point (as x and y coordinates), a segment (as two points), a triangle (as three points), a rectangle with sides parallel to the coordinate axes (as its diagonal segment: the segment going from the bottom left corner to the top right corner).
 
@@ -11,12 +13,12 @@ For the triangle: implement a member function to create a containing rectangle f
 
 Given coordinates of triangle points, output:
 
-The triangle area
-The triangle perimeter
-The containing rectangle area
-The containing rectangle perimeter
+> The triangle area <br>
+> The triangle perimeter <br>
+> The containing rectangle area <br>
+> The containing rectangle perimeter <br>
 <h2> Input </h2>
-The first line of the input contains T: the number of test cases. T test cases follow.
+The first line of the input contains T: the number of test cases. T test cases follow. <br>
 
 Each test case is a line containing six integer numbers: x1, y1, x2, y2, x3, and y3, where (xi,yi) are the coordinates of the i-th point of the triangle.
 
